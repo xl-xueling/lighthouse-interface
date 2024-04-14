@@ -1,4 +1,4 @@
-package com.dtstep.lighthouse.api.controller.com.dtstep.lighthouse.api;
+package com.dtstep.lighthouse.api.controller;
 
 import com.dtstep.lighthouse.api.common.ResultCode;
 import com.dtstep.lighthouse.api.common.ResultData;
