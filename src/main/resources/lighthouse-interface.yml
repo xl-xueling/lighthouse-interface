@@ -1,0 +1,35 @@
+lighthouse:
+  locators: 10.206.6.5:4061,10.206.6.13:4061
+server:
+  port: 9085
+  servlet:
+    context-path: /api/v1
+    session:
+      timeout: 18000
+  tomcat:
+    uri-encoding: utf-8
+spring:
+  messages:
+    basename: i18n/messages
+  mvc:
+    locale-resolver: fixed
+    locale: en_US
+    static-path-pattern: /static/**
+    hiddenmethod:
+      filter:
+        enabled: true
+  main:
+    allow-circular-references: true
+  devtools:
+    restart:
+      enabled: false
+  thymeleaf:
+    check-template-location: false
+    cache: false
+  cache:
+    redis:
+      time-to-live: 86400000
+mybatis:
+  config-location: classpath:mybatis-config.xml
+  mapper-locations:
+    - classpath*:mybatis/mapper/*.xml
