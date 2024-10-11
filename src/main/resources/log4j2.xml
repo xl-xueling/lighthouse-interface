@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="WARN" monitorInterval="600">
     <Properties>
-        <Property name="LOG_HOME">/opt/soft/lighthouse-2.1.2/logs/lighthouse-interface/</Property>
+        <Property name="LOG_HOME">./logs/lighthouse-interface/</Property>
     </Properties>
     <Appenders>
         <Console name="ConsoleAppender" target="SYSTEM_OUT">
