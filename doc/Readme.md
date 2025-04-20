@@ -22,6 +22,9 @@ mvn clean install
 
 nohup java -Xms300M -Xmx300M -XX:+UseG1GC -jar /opt/soft/test/lighthouse-interface-1.0.0.jar > output.log 2>&1 &
 
+
+nohup java -Xms300M -Xmx300M -XX:+UseG1GC -jar /opt/soft/interface/lighthouse-interface-1.0.0.jar > output.log 2>&1 &
+
 如果需要重新启动，请将原先的进程kill掉。
 可执行jps -l命令，找到 "475878 /opt/soft/test/lighthouse-interface-1.0.0.jar" ,kill掉原来的进程即可，务必注意：不要Kill错其他的进程。
 
